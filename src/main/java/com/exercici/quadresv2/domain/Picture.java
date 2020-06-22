@@ -8,7 +8,6 @@ import java.util.Date;
 @Entity(name="Picture")
 public class Picture {
     @Id
-    //@GeneratedValue(strategy = GenerationType.AUTO)
     //@GeneratedValue(strategy = GenerationType.SEQUENCE)
     @GeneratedValue(strategy= GenerationType.AUTO,generator="native")
     @GenericGenerator(name = "native",strategy = "native")

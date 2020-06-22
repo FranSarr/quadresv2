@@ -10,7 +10,6 @@ import javax.persistence.Id;
 @Entity(name="Shop")
 public class Shop {
     @Id
-    //@GeneratedValue(strategy = GenerationType.AUTO)
     //@GeneratedValue(strategy = GenerationType.SEQUENCE)
     @GeneratedValue(strategy= GenerationType.AUTO,generator="native")
     @GenericGenerator(name = "native",strategy = "native")
